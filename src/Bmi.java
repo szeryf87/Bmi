@@ -8,6 +8,9 @@ public class Bmi {
 
         Scanner scanner = new Scanner(System.in);
 
+        App app = new App();
+        app.dodaj();
+
             System.out.println("Podaj wzrost w metrach: ");
             a = scanner.nextDouble();
             System.out.println("Podaj wage w kilogramach: ");
@@ -16,7 +19,7 @@ public class Bmi {
             double c = b / (a * a);
 
             if (c < 18.50) {
-                System.out.println("Niedowaga.");
+                System.out.println("Masz niedowage.");
             }
 
             else if (c > 18.50) {
@@ -24,7 +27,7 @@ public class Bmi {
             }
             else if (c > 24.99) {
 
-                System.out.println("Nadwaga");
+                System.out.println("Nadwaga.");
             }
 
         scanner.close();
