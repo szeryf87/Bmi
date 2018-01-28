@@ -31,6 +31,7 @@ public class Bmi {
             }
 
         scanner.close();
+        System.out.println("Dziękuję za użycie programu.");
         }
     }
 
